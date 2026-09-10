@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <meta
+        name="description"
+        content="Portfólio pessoal de Luiz Filipe, desenvolvedor Front-end. Conheça meus projetos, habilidades e formas de contato.">
+
+    <title>Luiz Filipe | Portfólio</title>
+
+    <!--Aula 1 -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+
+        <h1>Luiz Filipe</h1>
+
+        <p class="cargo">Desenvolvedor Front-end</p>
+
+        <!-- Menu -->
+        <nav>
+            <a href="#hero">Início</a>
+            <a href="#destaques">Destaques</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Hero -->
+        <section id="hero">
+
+            <h2 class="hello-word" id="typing-text"></span> </h2> 
+
+            <img
+                src="imagens/lisa.png"
+                alt="Foto de Luiz Filipe">
+
+            <p>
+                Sou estudante de desenvolvimento web e estou construindo
+                meu portfólio para compartilhar meus projetos e aprendizados.
+            </p>
+
+        </section>
+
+        <!-- Destaques (Bento Grid) -->
+        <section id="destaques" class="bento-section">
+
+            <h2> Destaques </h2>
+
+            <div class="bento-grid">
+
+                <div class="bento-card bento-orange card-sobre">
+                    <h3>Sobre mim</h3>
+                    <img src="assets/estilo.png" alt="Foto de Luiz Filipe" class="bento-img" aria-hidden="true">
+                </div>
+
+                <div class="bento-card bento-red card-ferramentas">
+                    <h3>Ferramentas</h3>
+                    <img src="assets/tools.png" alt="Ferramentas" class="bento-img" aria-hidden="true">
+                </div>
+
+                <div class="bento-card bento-blue card-behance">
+                    <h3>Behance</h3>
+                    <img src="assets/global.png" alt="" class="bento-img" aria-hidden="true">
+                </div>
+
+                <div class="bento-card bento-yellow card-projetos">
+                    <h3>Projetos</h3>
+                    <img src="assets/pc.png" alt="" class="bento-img" aria-hidden="true">
+                </div>
+
+                <div class="bento-card bento-pink card-softskills">
+                    <img src="assets/heart.png" alt="" class="bento-icon" aria-hidden="true">
+                    <h3>Soft Skills</h3>
+                </div>
+
+                <div class="bento-card bento-green card-social">
+                    <img src="assets/send.png" alt="" class="bento-icon" aria-hidden="true">
+                    <h3>Social</h3>
+                </div>
+
+                <div class="bento-card bento-purple card-cta">
+                    <h3>Vamos criar algo incrível juntos?</h3>
+                    <p>Estou disponível para novos projetos freelance e oportunidades full-time.</p>
+                    <a href="#contato" class="btn-cta">Entrar em contato</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre">
+
+            <h2>Sobre Mim</h2>
+
+            <p>
+                Tenho interesse em desenvolvimento web e estou aprendendo
+                HTML, CSS e outras tecnologias para criar sites modernos.
+            </p>
+
+            <button id="btn-ver-mais">Ver mais</button>
+
+            <div id="conteudo-extra"></div>
+
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades">
+
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git e GitHub</li>
+            </ul>
+
+            <button id="botao-habilidades">
+                Ver minhas habilidades
+            </button>
+
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos">
+
+            <h2>Projetos</h2>
+
+            <div class="projetos-grid">
+                <article>
+                    <h3>Landing Page</h3>
+                    <p>Página criada utilizando HTML.</p>
+                </article>
+
+                <article>
+                    <h3>Currículo Online</h3>
+                    <p>Primeira versão do meu portfólio.</p>
+                </article>
+
+                <article>
+                    <h3>Site Responsivo</h3>
+                    <p>Projeto desenvolvido para praticar CSS.</p>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+
+            <h2>Entre em Contato</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="assunto">Assunto</label><br>
+
+                    <input
+                        type="text"
+                        id="assunto"
+                        name="assunto">
+                </p>
+
+                <p>
+
+                    <label for="nome">Nome</label><br>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome">
+
+                </p>
+
+                <p>
+
+                    <label for="email">E-mail</label><br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email">
+
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem</label><br>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"></textarea>
+                </p>
+                <p id="contador"></p>
+
+                <p>
+
+                    <input
+                        type="submit"
+                        value="Enviar">
+
+                </p>
+
+            </form>
+            <p id="mensagem-sucesso"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <p>&copy; 2026 Luiz Filipe</p>
+
+        <p>E-mail: luizfilipe@email.com</p>
+
+        <p>
+            <a class="link-social" href="#">GitHub</a> |
+            <a class="link-social" href="#">LinkedIn</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
